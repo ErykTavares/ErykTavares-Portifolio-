@@ -1,0 +1,22 @@
+nav ul {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLink {
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+
+.navLink:hover {
+  color: #780206;
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,81 @@
+.experienciaContent {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.experienciaContent h2{
+    font-size: 2.8rem;
+}
+
+.skills {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills ul{
+    width: 50%;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+.skills li{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.skills li img{
+  width: 50px;
+  height: 40px;
+  padding-right: 5px;
+}
+
+.experiencia {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experienciaList{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top:45px;
+}
+
+.experienciaList li{
+  width: 250px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: #151515;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:945px){
+  .experienciaContent{
+    flex-direction: column;
+  }
+
+  .skills, .experienciaList{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

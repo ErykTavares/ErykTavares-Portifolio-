@@ -1,0 +1,30 @@
+.menuMobile {
+  position: absolute;
+  display: none;
+  width: 80%;
+  height: 50px;
+  top: 78px;
+  border-radius: 0 0 10px 10px;
+  overflow-x: hidden;
+  background-color: #151515;
+  z-index: 1;
+  transition: .5s;
+}
+
+.menuMobile ul {
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 750px) {
+  .menuMobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width:390px){
+    .navLink{
+        font-size: 1rem;
+    }
+}

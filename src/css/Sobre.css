@@ -1,0 +1,114 @@
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a00207;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #780206;
+}
+
+.sobre h2 {
+  color: white;
+  margin: 30px 0;
+  font-size: 2.5rem;
+  margin-top: 15px;
+}
+
+.sobreContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6%;
+  margin-bottom: 15px;
+}
+
+.sobrecontentLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobrecontentLeft h4 {
+  color: white;
+  transition: 0.5s;
+}
+
+.sobrecontentLeft h4:hover {
+  color: #780206;
+}
+
+.sobreSocialmedia {
+  margin-bottom: 15px;
+}
+
+.sobreSocialmedia img {
+  transition: 0.5s;
+  margin-right: 10px;
+}
+
+.sobreSocialmedia img:hover {
+  transform: scale(1.2);
+}
+
+.sobreProfileimg img {
+  max-width: 100%;
+  border: 3px solid transparent;
+  border-radius: 100%;
+  background-image: linear-gradient(#121212, #121212),
+    radial-gradient(circle at top left, #780206, #061161);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.sobreProfileimg img:hover {
+  transform: scale(1.1);
+}
+
+.sobrecontentRight {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.sobrecontentRight p {
+  color: white;
+  letter-spacing: 2px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 870px) {
+    .sobreContent{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobrecontentLeft, .sobrecontentRight{
+        width: 100%;
+    }
+
+    .sobrecontentRight{
+        width: 90%;
+        text-align: justify;
+    }
+
+}
