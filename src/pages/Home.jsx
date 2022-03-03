@@ -36,6 +36,7 @@ const Home = () => {
             <a
               href="https://www.linkedin.com/in/eryk-t-7879a7ba/"
               target="_blank"
+              rel="noreferrer"
             >
               <button className="btn">
                 <img
@@ -46,7 +47,7 @@ const Home = () => {
                 Linkedin
               </button>
             </a>
-            <a href="https://github.com/ErykTavares" target="_blank">
+            <a href="https://github.com/ErykTavares" target="_blank"  rel="noreferrer">
               <button className="btn">
                 <img
                   className="buttonSvg"

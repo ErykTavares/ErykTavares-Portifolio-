@@ -63,15 +63,15 @@ const projectsArry = [
     <div className="projectsContent">
         {
           projectsArry.filter((project) => {
-            if(category == "Tudo"){
+            if(category === "Tudo"){
               return project
             }
-            else if(project.category == category){
+            else if(project.category === category){
               return project
             }
           }).map(({name, description, gif, link}) =>{
             return(
-              <a className="projectsCard" href={link} target="_blank" key={name}>
+              <a className="projectsCard" href={link} target="_blank" key={name}  rel="noreferrer">
                   <h3>{name}</h3>
                   <img src={gif} alt={{name} + "gif"} />
                   <h5>{description}</h5>

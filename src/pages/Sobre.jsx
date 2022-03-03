@@ -17,6 +17,7 @@ const Sobre = () => {
             <a
               href="https://www.instagram.com/lord_eryktavares/?hl=pt-br"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 src={process.env.PUBLIC_URL + "./assets/svg/Instagram.svg"}
@@ -26,6 +27,7 @@ const Sobre = () => {
             <a
               href="https://www.youtube.com/channel/UCvLrUAMzmxB-H0iK8H7ReQg"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 src={process.env.PUBLIC_URL + "./assets/svg/youtube.svg"}
@@ -35,6 +37,7 @@ const Sobre = () => {
             <a
               href="http://api.whatsapp.com/send?phone=557591952463"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 src={process.env.PUBLIC_URL + "./assets/svg/whatsapp.svg"}
@@ -44,6 +47,7 @@ const Sobre = () => {
             <a
               href="https://discord.com/users/859431514449379358"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 src={
