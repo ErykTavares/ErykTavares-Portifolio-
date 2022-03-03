@@ -20,6 +20,7 @@ const Home = () => {
             href={
               process.env.PUBLIC_URL + "./assets/download/EricCVprogramação.pdf"
             }
+            target="_blank"
             download
           >
             <button className="btn">

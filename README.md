@@ -4,6 +4,9 @@
 
 - **Meu portfólio pessoal que eu fiz aplicando todos os meus conhecimentos atuais dês de o designer feito no figma  ate o código em react, reac-routes.**
 
+### **Site do Projeto**
+ **https://eryktavares-portifolio.netlify.app/**
+
 ### **Exemplo do Projeto**
 
 <img src="https://media.giphy.com/media/jPO3NVt1ZOpAQhTQKk/giphy.gif" alt="To Do gif">
