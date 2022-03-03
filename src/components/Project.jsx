@@ -69,6 +69,7 @@ const projectsArry = [
             else if(project.category === category){
               return project
             }
+            return null
           }).map(({name, description, gif, link}) =>{
             return(
               <a className="projectsCard" href={link} target="_blank" key={name}  rel="noreferrer">

@@ -22,6 +22,7 @@ const Home = () => {
             }
             target="_blank"
             download
+            rel="noreferrer"
           >
             <button className="btn">
               <img
