@@ -11,6 +11,13 @@ const projectsArry = [
         category : "React"
     },
     {
+        name : "Tabela de Permissoes",
+        description : "Desafio de uma Vaga de Front-End Web React.",
+        link : "https://github.com/ErykTavares/Tabela-de-Permissoes",
+        gif : "https://media.giphy.com/media/VRdZdtuWR3dMueYmBv/giphy.gif",
+        category : "React"
+    },
+    {
         name : "To Do",
         description : "Desafio que eu fiz para praticar React que eu recém comecei a aprender.",
         link : "https://github.com/ErykTavares/To-Do",
