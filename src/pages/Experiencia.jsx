@@ -8,27 +8,31 @@ const Experiencia = () => {
         <h2>Skills</h2>
         <ul>
           <li>
-            <img src={process.env.PUBLIC_URL + "./assets/svg/html cor normal.svg"} alt="" />
+            <img src={process.env.PUBLIC_URL + "./assets/svg/html cor normal.svg"} alt="Html" />
             <h4>Html</h4>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "./assets/svg/css cor normal.svg"} alt=""   />
+            <img src={process.env.PUBLIC_URL + "./assets/svg/css cor normal.svg"} alt="Css"   />
             <h4>Css</h4>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "./assets/svg/js cor normal.svg"} alt="" />
+            <img src={process.env.PUBLIC_URL + "./assets/svg/js cor normal.svg"} alt="JavaScript" />
             <h4>JavaScript</h4>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "./assets/svg/python cor normal.svg"} alt="" />
+            <img src={process.env.PUBLIC_URL + "./assets/svg/python cor normal.svg"} alt="Python" />
             <h4>Python</h4>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "./assets/svg/react cor normal.svg"} alt="" />
+            <img src={process.env.PUBLIC_URL + "./assets/svg/react cor normal.svg"} alt="React" />
             <h4>React</h4>
           </li>
           <li>
-            <img src={process.env.PUBLIC_URL + "./assets/svg/bootstrap cor normal.svg"} alt="" />
+            <img src={process.env.PUBLIC_URL + "./assets/svg/styledComponents.svg"} alt="StyledCompoents" />
+            <h4>StyledComponents</h4>
+          </li>
+          <li>
+            <img src={process.env.PUBLIC_URL + "./assets/svg/bootstrap cor normal.svg"} alt="Bootstrap" />
             <h4>Bootstrap</h4>
           </li>
         </ul>
