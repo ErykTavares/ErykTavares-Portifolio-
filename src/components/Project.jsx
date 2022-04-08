@@ -11,6 +11,13 @@ const projectsArry = [
         category : "React"
     },
     {
+        name : "CodeLeap Network",
+        description : "Desafio de uma vaga, criação de um mini blog consumido a api disponibilizada para o desafio.",
+        link : "https://github.com/ErykTavares/codeleap",
+        gif : "https://media.giphy.com/media/ToLWmm3pB9NeiMGjae/giphy.gif",
+        category : "React"
+    },
+    {
         name : "Tabela de Permissoes",
         description : "Desafio de uma Vaga de Front-End Web React.",
         link : "https://github.com/ErykTavares/Tabela-de-Permissoes",
