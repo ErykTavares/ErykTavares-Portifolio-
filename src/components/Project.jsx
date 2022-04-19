@@ -11,6 +11,13 @@ const projectsArry = [
         category : "React"
     },
     {
+        name : "Pinguin Lanches",
+        description : "Teste de uma vaga de Desenvolvedor Front-End Web React.",
+        link : "https://github.com/ErykTavares/pinguimlanches",
+        gif : "https://media.giphy.com/media/0SPYOBdvPIVbbbY0mL/giphy.gif",
+        category : "React"
+    },
+    {
         name : "CodeLeap Network",
         description : "Desafio de uma vaga, criação de um mini blog consumido a api disponibilizada para o desafio.",
         link : "https://github.com/ErykTavares/codeleap",
