@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   ExperienciaStyle,
   SkillsSectionStyle,
@@ -18,7 +17,6 @@ import { ReactComponent as Bootstrap } from "../../assets/svg/bootstrap cor norm
 
 function Experiencia() {
   const worklist = worklistmock;
-  
 
   return (
     <ExperienciaStyle>
