@@ -49,5 +49,14 @@
     "eslint-plugin-react-hooks": "^4.4.0",
     "prettier": "^2.6.2"
   },
-  "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
+  "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+  "husk": {
+    "hooks": {
+      "pre-commit" : "lint-staged"
+    }
+  },
+  "lint-staged" : {
+    "*.js" : "prettier --write",
+    "*.jsx" : "prettier --write"
+  }
 }
