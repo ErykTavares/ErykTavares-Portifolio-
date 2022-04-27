@@ -7,7 +7,7 @@ export const ProjectCardStyle = styled.a`
     display:flex;
     flex-direction: column;
     align-items:center;
-    justify-content:end;
+    justify-content:center;
     border-radius:1rem;
     border: 2px solid transparent;
     border-radius: 1rem;
@@ -18,6 +18,11 @@ export const ProjectCardStyle = styled.a`
     &:hover{
         img{
             transform: scale(1.2);
+            opacity: .5;
+        }
+        .card-content{
+            opacity: 1;
+            transform: translateY(0%);
         }
     }
         
@@ -40,8 +45,29 @@ export const ProjectCardStyle = styled.a`
         top: 0;
         left: 0;
         z-index: 0;
-        opacity: .4;
         transition: .5s;
+    }
+
+    .card-content{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        opacity: 0;
+        transform: translateY(100%); 
+        transition: .8s;
+    }
+  
+
+    .row-badge{
+        width: 100%;
+        display:flex;
+        align-items:center;
+        justify-content:space-evenly;
+        z-index: 1;
+        div{
+            z-index: 1;
+        }
     }
 
 `

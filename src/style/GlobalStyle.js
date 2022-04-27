@@ -87,6 +87,7 @@ export const GlobalStyle = createGlobalStyle`
         animation: disabledmenu .7s forwards;
     }
 
+
     @keyframes disabledmenu{
         from{
             &.lineone{
