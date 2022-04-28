@@ -6,9 +6,10 @@ export const HomeStyle = styled.section`
     align-items: center;
     justify-content:space-between;
     overflow-x:hidden;
-    @media screen and (max-width:1037px) {
-        height: auto;
+    @media screen and (max-width:1300px) {
+        height: 1300px;
         flex-direction:column;
+        justify-content:space-evenly;
         margin-bottom:1.8rem;
 
     }

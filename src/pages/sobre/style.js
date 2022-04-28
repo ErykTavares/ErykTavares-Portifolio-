@@ -7,7 +7,7 @@ export const SobreStyle = styled.section`
     align-items:center;
     justify-content:center;
     @media screen and (max-width:890px){
-        height: auto;
+        height: 1300px;
     }
     @media screen and (max-width:456px){
         padding-top: 3rem;
