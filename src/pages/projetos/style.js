@@ -7,6 +7,9 @@ export const ProjectStyle = styled.section`
         align-items:center;
         justify-content:center;
         @media screen and (max-width:1300px){
+            height: 1450px;
+        }
+        @media screen and (max-width:1150px){
             height: auto;
         }
 
