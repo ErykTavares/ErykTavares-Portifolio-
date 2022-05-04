@@ -5,7 +5,6 @@ export const HomeStyle = styled.section`
     display: flex;
     align-items: center;
     justify-content:space-between;
-    overflow-x:hidden;
     @media screen and (max-width:1300px) {
         height: 1300px;
         flex-direction:column;
