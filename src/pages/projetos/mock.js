@@ -7,6 +7,13 @@ export default  [
         category : ["React"]
     },
     {
+        name : "Evelynn",
+        description : "Trabalhando Freelancer de criação de uma ladingpage.",
+        link : "#",
+        gif : "https://media.giphy.com/media/RE6rgFixz3xCnxHBjw/giphy.gif",
+        category : ["React"]
+    },
+    {
         name : "Pinguin Lanches",
         description : "Teste de uma vaga de Desenvolvedor Front-End Web React.",
         link : "https://github.com/ErykTavares/pinguimlanches",
