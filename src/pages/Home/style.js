@@ -8,7 +8,7 @@ export const HomeStyle = styled.section`
     @media screen and (max-width:1300px) {
         height: 1300px;
         flex-direction:column;
-        justify-content:space-evenly;
+        justify-content:space-around;
         margin-bottom:1.8rem;
 
     }
@@ -29,6 +29,7 @@ export const HomeContentRight = styled.div`
     align-items:center;
     margin: 1.8rem 0;
     }
+
    .rContentTitle h2{
        font-size:4.8rem;
        @media screen and (max-width:526px){
@@ -77,16 +78,27 @@ export const HomeContentRight = styled.div`
             flex-grow:2;
             margin: 0 17px;
        }
+       
+       a:nth-child(2){
+           margin-right: .8rem;
+           @media screen and (max-width:440px){
+            margin-right: 0;
+        }
+       }
+
    }
+
+
 
 `
 export const HomeContentLeft = styled.div`
+        min-width: 300px;
         width: 50%;
         display: flex;
         align-items: center;
         justify-content:center;
         margin-top:15px;
-        @media screen and (max-width:1037px){
+        @media screen and (max-width:1300px){
             width:100%
         }
 
