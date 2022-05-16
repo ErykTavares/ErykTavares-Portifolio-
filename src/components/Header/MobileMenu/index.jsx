@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuMobileStyle } from "./styled";
 
-function Index({ children, active }) {
+function Index({ children, active}) {
   const [state, setState] =
     React.useState("none");
 

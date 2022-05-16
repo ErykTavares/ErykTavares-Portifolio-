@@ -36,7 +36,7 @@ function Header() {
   }
 
   return (
-    <HeaderStyle>
+    <HeaderStyle >
       <div className="HeaderContent">
         <NavLink to="/home">
           <h1>ErykTavares</h1>
@@ -59,7 +59,7 @@ function Header() {
         <nav className="desktopMenu">
           {navlinks}
         </nav>
-        <MenuMobile active={menumobile}>
+        <MenuMobile className="menumobile" active={menumobile}>
           {navlinks}
         </MenuMobile>
       </div>

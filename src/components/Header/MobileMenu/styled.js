@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MenuMobileStyle = styled.nav`
-    display:${({state})=>state};
+    display:none;
     position: absolute;
     width: 80%;
     height: 50px;
@@ -11,6 +11,9 @@ export const MenuMobileStyle = styled.nav`
     top: 100px;
     background-color:var(--black200);
     transition: 1s;
+    @media screen and (max-width:760px){
+           display:${({state})=>state};
+    }
     @media screen and (max-width:400px){
            height: 200px;
         }
