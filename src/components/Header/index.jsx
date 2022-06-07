@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Line from "../Line";
 import { HeaderStyle } from "./style";
 import { ReactComponent as Mobile } from "../../assets/svg/MenuMobile.svg";
@@ -9,6 +9,8 @@ import MenuMobile from "./MobileMenu/index";
 function Header() {
   const [menumobile, setMenuMobile] =
     React.useState(false);
+
+  const location = useLocation();
 
   const navlinks = (
     <ul>
@@ -34,6 +36,10 @@ function Header() {
   function handleClick() {
     setMenuMobile(!menumobile);
   }
+
+  React.useEffect(()=>{
+    setMenuMobile(false);
+  },[location])
 
   return (
     <HeaderStyle >

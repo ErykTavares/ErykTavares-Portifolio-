@@ -59,15 +59,28 @@ function Sobre() {
         <SobreContentRight className="animeright">
           <h3>Apresentação</h3>
           <p>
-            Desenvolvedor Web Front-end e
-            futuro desenvolvedor full stack,
-            sou apaixonado pela área de
+            Desenvolvedor Front-end com
+            experiência em React, Javascript,
+            StyledComponentes, Html, Css,
+            Bootstrap;
+          </p>
+          <p>
+            Atualmente trabalhando como
+            Desenvolvedor Front-End
+            Freelancer;
+          </p>
+          <p>
+            Tenho interesse em ser um
+            Desenvolvedor FullStack;
+          </p>
+          <p>
+            Sou apaixonado pela área de
             tecnologia, venho mexendo em
-            computadores des de 2011 que foi
+            computadores desde 2011 que foi
             quando eu ganhei meu primeiro
             notebook, dês dessa época eu
             tenho interesse na área de
-            programação. Entusiasta em ui ux
+            programação. Entusiasta em UI UX
             e edição de vídeo, curto muito
             jogos, animes, mangás, leitura e
             esportes principalmente

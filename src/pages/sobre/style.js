@@ -80,7 +80,7 @@ export const SobreContentLeft = styled.div`
 `
 export const SobreContentRight = styled.div`
     width: 50%;
-    height: 400px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -92,9 +92,6 @@ export const SobreContentRight = styled.div`
     @media screen and (max-width:768px){
        width: 98%;
     }
-    @media screen and (max-width:380px){
-       margin-bottom: 4rem;
-    }
     
 
     h3{
@@ -103,7 +100,6 @@ export const SobreContentRight = styled.div`
 
     p{
         align-self:start;
-        line-height:24px;
         word-break:break-all;
         text-align:justify;
         font-size:1.1rem;
