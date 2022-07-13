@@ -14,6 +14,7 @@ import { ReactComponent as Reactsvg } from "../../assets/svg/react cor normal.sv
 import { ReactComponent as StyledComponents } from "../../assets/svg/styledComponents.svg";
 import { ReactComponent as Python } from "../../assets/svg/python cor normal.svg";
 import { ReactComponent as Bootstrap } from "../../assets/svg/bootstrap cor normal.svg";
+import { ReactComponent as TypeScriptSVg } from "../../assets/svg/tsSvg.svg";
 
 function Experiencia() {
   const worklist = worklistmock;
@@ -29,6 +30,7 @@ function Experiencia() {
         <StyledComponents />
         <Python />
         <Bootstrap />
+        <TypeScriptSVg />
       </SkillsSectionStyle>
       <ExprienciaSectionStyle>
         <PageTitle>Experiência</PageTitle>
