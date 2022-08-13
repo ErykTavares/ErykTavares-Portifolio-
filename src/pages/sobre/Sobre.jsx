@@ -60,8 +60,8 @@ function Sobre() {
           <h3>Apresentação</h3>
           <p>
             Desenvolvedor Front-end com
-            experiência em React, Javascript,
-            StyledComponentes, Html, Css,
+            experiência em React, TypeScript, Javascript,
+            StyledComponentes, Html, Css, Sass,
             Bootstrap;
           </p>
           <p>

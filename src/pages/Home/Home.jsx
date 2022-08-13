@@ -11,6 +11,7 @@ import { ReactComponent as Linkedin } from "../../assets/svg/Linkedin.svg";
 import { ReactComponent as GitHub } from "../../assets/svg/Github.svg";
 
 function Home() {
+  console.log("test");
   return (
     <HomeStyle>
       <HomeContentLeft className="animeleft">

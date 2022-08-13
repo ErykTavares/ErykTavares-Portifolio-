@@ -52,11 +52,11 @@
   "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
   "husk": {
     "hooks": {
-      "pre-commit" : "lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
-  "lint-staged" : {
-    "*.js" : "prettier --write",
-    "*.jsx" : "prettier --write"
+  "lint-staged": {
+    "*.js": "prettier --write",
+    "*.jsx": "prettier --write"
   }
 }
