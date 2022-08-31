@@ -6,9 +6,8 @@ import { ReactComponent as Mobile } from "../../assets/svg/MenuMobile.svg";
 import Button from "../Buttons/index";
 import MenuMobile from "./MobileMenu/index";
 
-function Header() {
-  const [menumobile, setMenuMobile] =
-    React.useState(false);
+const Header = () => {
+  const [menumobile, setMenuMobile] = React.useState(false);
 
   const location = useLocation();
 
@@ -21,14 +20,10 @@ function Header() {
         <NavLink to="/sobre">Sobre</NavLink>
       </li>
       <li>
-        <NavLink to="/experiencia">
-          Expêriencia
-        </NavLink>
+        <NavLink to="/experiencia">Expêriencia</NavLink>
       </li>
       <li>
-        <NavLink to="/projetos">
-          Projetos
-        </NavLink>
+        <NavLink to="/projetos">Projetos</NavLink>
       </li>
     </ul>
   );
@@ -37,12 +32,12 @@ function Header() {
     setMenuMobile(!menumobile);
   }
 
-  React.useEffect(()=>{
+  React.useEffect(() => {
     setMenuMobile(false);
-  },[location])
+  }, [location]);
 
   return (
-    <HeaderStyle >
+    <HeaderStyle>
       <div className="HeaderContent">
         <NavLink to="/home">
           <h1>ErykTavares</h1>
@@ -55,16 +50,10 @@ function Header() {
           onClick={handleClick}
         >
           <Mobile
-            className={
-              menumobile
-                ? "btn-menu active"
-                : "btn-menu disabled"
-            }
+            className={menumobile ? "btn-menu active" : "btn-menu disabled"}
           />
         </Button>
-        <nav className="desktopMenu">
-          {navlinks}
-        </nav>
+        <nav className="desktopMenu">{navlinks}</nav>
         <MenuMobile className="menumobile" active={menumobile}>
           {navlinks}
         </MenuMobile>
@@ -72,6 +61,6 @@ function Header() {
       <Line />
     </HeaderStyle>
   );
-}
+};
 
 export default Header;

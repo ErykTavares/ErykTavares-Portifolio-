@@ -1,13 +1,7 @@
 import React from "react";
 import { ButtonStyle } from "./style";
 
-function Button({
-  children,
-  onClick,
-  bgcolor,
-  width,
-  height,
-}) {
+const Button = ({ children, onClick, bgcolor, width, height }) => {
   return (
     <ButtonStyle
       bgcolor={bgcolor}
@@ -17,7 +11,7 @@ function Button({
     >
       {children}
     </ButtonStyle>
-  )
-}
+  );
+};
 
 export default Button;

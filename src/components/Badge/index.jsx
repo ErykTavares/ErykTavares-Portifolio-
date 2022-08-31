@@ -11,27 +11,17 @@ const bgcolorlist = {
   bootstrap: "#3302A6",
 };
 
-function Badge({ lang }) {
-  const [bgcolor, setBgColor] =
-    React.useState("");
+const Badge = ({ lang }) => {
+  const [bgcolor, setBgColor] = React.useState("");
 
   React.useEffect(() => {
-    Object.keys(bgcolorlist).filter(
-      (fill) => {
-        const lowercaselang =
-          lang.toLowerCase();
-        return fill === lowercaselang
-          ? setBgColor(bgcolorlist[fill])
-          : null;
-      },
-    );
+    Object.keys(bgcolorlist).filter((fill) => {
+      const lowercaselang = lang.toLowerCase();
+      return fill === lowercaselang ? setBgColor(bgcolorlist[fill]) : null;
+    });
   }, [lang]);
 
-  return (
-    <BadgeStyle bgcolor={bgcolor}>
-      {lang}
-    </BadgeStyle>
-  );
-}
+  return <BadgeStyle bgcolor={bgcolor}>{lang}</BadgeStyle>;
+};
 
 export default Badge;

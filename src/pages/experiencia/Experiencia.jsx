@@ -16,7 +16,7 @@ import { ReactComponent as Python } from "../../assets/svg/python cor normal.svg
 import { ReactComponent as Bootstrap } from "../../assets/svg/bootstrap cor normal.svg";
 import { ReactComponent as TypeScriptSVg } from "../../assets/svg/tsSvg.svg";
 
-function Experiencia() {
+const Experiencia = () => {
   const worklist = worklistmock;
 
   return (
@@ -35,24 +35,19 @@ function Experiencia() {
       <ExprienciaSectionStyle>
         <PageTitle>Experiência</PageTitle>
 
-        {worklist.map(
-          (
-            { name, date, description },
-            index,
-          ) => {
-            return (
-              <ExperienciaRow
-                key={index}
-                name={name}
-                date={date}
-                description={description}
-              />
-            );
-          },
-        )}
+        {worklist.map(({ name, date, description }, index) => {
+          return (
+            <ExperienciaRow
+              key={index}
+              name={name}
+              date={date}
+              description={description}
+            />
+          );
+        })}
       </ExprienciaSectionStyle>
     </ExperienciaStyle>
   );
-}
+};
 
 export default Experiencia;

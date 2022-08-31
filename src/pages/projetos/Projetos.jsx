@@ -1,9 +1,6 @@
 import React from "react";
 import mock from "./mock";
-import {
-  ProjectStyle,
-  ProjectGridStyle,
-} from "./style";
+import { ProjectStyle, ProjectGridStyle } from "./style";
 import PageTitle from "../../components/PageTitle";
 import ProjectCard from "../../components/ProjectCard";
 
@@ -14,16 +11,7 @@ const Projetos = () => {
       <PageTitle>Projetos</PageTitle>
       <ProjectGridStyle>
         {projectlist.map(
-          (
-            {
-              name,
-              description,
-              gif,
-              link,
-              category,
-            },
-            index,
-          ) => (
+          ({ name, description, gif, link, category }, index) => (
             <ProjectCard
               key={index}
               title={name}

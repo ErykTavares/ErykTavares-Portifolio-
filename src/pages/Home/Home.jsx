@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  HomeStyle,
-  HomeContentLeft,
-  HomeContentRight,
-} from "./style";
+import { HomeStyle, HomeContentLeft, HomeContentRight } from "./style";
 import { ReactComponent as Tecnologia } from "../../assets/svg/tencologia.svg";
 import Button from "../../components/Buttons/index";
 import { ReactComponent as Download } from "../../assets/svg/download.svg";
@@ -19,9 +15,7 @@ const Home = () => {
       <HomeContentRight className="animeright">
         <div className="rContentTitle">
           <h2>ErykTavares</h2>
-          <h4>
-            Desenvolvedor Web Front-End
-          </h4>
+          <h4>Desenvolvedor Web Front-End</h4>
         </div>
         <div className="rContentButtons">
           <a

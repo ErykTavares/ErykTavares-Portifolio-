@@ -1,8 +1,8 @@
 import React from "react";
 import { LineStyled } from "./style";
 
-function Line() {
+const Line = () => {
   return <LineStyled />;
-}
+};
 
 export default Line;
