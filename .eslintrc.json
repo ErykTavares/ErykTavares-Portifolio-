@@ -3,7 +3,12 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["plugin:react/recommended", "airbnb", "eslint:recommended", "prettier"],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "eslint:recommended",
+    "prettier"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -11,15 +16,27 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "prettier"
+  ],
   "rules": {
     "quotes": "off",
     "linebreak-style": "off",
-    "react/prop-types" : "off",
-    "import/prefer-default-export" : "off",
+    "react/prop-types": "off",
+    "import/prefer-default-export": "off",
     "arrow-body-style": "off",
-    "react/jsx-no-bind" : "off",
-    "react/no-array-index-key" : "off",
-    "no-console" : "off"
+    "react/jsx-no-bind": "off",
+    "react/no-array-index-key": "off",
+    "no-console": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ]
   }
 }

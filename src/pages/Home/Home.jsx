@@ -10,8 +10,7 @@ import { ReactComponent as Download } from "../../assets/svg/download.svg";
 import { ReactComponent as Linkedin } from "../../assets/svg/Linkedin.svg";
 import { ReactComponent as GitHub } from "../../assets/svg/Github.svg";
 
-function Home() {
-  console.log("test");
+const Home = () => {
   return (
     <HomeStyle>
       <HomeContentLeft className="animeleft">
@@ -58,6 +57,6 @@ function Home() {
       </HomeContentRight>
     </HomeStyle>
   );
-}
+};
 
 export default Home;

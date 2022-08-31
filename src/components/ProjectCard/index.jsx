@@ -1,14 +1,15 @@
 import React from "react";
 import Badge from "../Badge";
+import Image from "../Image";
 import { ProjectCardStyle } from "./style";
 
-function ProjectCard({
+const ProjectCard = ({
   title,
   description,
   gif,
   link,
-  category
-}) {
+  category,
+}) => {
   return (
     <ProjectCardStyle
       className="animepop"
@@ -16,16 +17,18 @@ function ProjectCard({
       target="_blank"
       rel="noreferrer"
     >
-      <img src={gif} alt="project-gif" />
+      <Image src={gif} alt="project-gif" />
       <div className="card-content">
         <h3>{title}</h3>
         <p>{description}</p>
         <div className="row-badge">
-          {category.map((item, index)=><Badge key={index} lang={item} />)}
+          {category.map((item, index) => (
+            <Badge key={index} lang={item} />
+          ))}
         </div>
       </div>
     </ProjectCardStyle>
   );
-}
+};
 
 export default ProjectCard;

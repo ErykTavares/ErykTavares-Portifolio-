@@ -46,6 +46,12 @@ export const SobreContentLeft = styled.div`
     }
 
     .profile-img{
+        article{
+            .skeleton{
+                border-radius: 50%;
+
+            }
+        }
         img{
             border: 3px solid transparent;
             border-radius: 50%;

@@ -38,6 +38,10 @@ export const ProjectCardStyle = styled.a`
         margin-bottom: .5rem;
     }
 
+    article{
+        position: absolute;
+    }
+
     img{
         width: 300px;
         height: 220px;

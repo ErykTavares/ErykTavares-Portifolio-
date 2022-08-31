@@ -9,8 +9,9 @@ import { ReactComponent as Instagramsvg } from "../../assets/svg/Instagram.svg";
 import { ReactComponent as Youtubesvg } from "../../assets/svg/youtube.svg";
 import { ReactComponent as Whatsappsvg } from "../../assets/svg/whatsapp.svg";
 import { ReactComponent as Discordsvg } from "../../assets/svg/discord-svgrepo-com.svg";
+import Image from "../../components/Image";
 
-function Sobre() {
+const Sobre = () => {
   return (
     <SobreStyle>
       <div className="sobretitle">
@@ -19,7 +20,7 @@ function Sobre() {
       <div className="content">
         <SobreContentLeft className="animeleft">
           <div className="profile-img">
-            <img
+            <Image
               src={`${process.env.PUBLIC_URL}./assets/img/profile-img.webp`}
               alt="profile-img"
             />
@@ -60,9 +61,9 @@ function Sobre() {
           <h3>Apresentação</h3>
           <p>
             Desenvolvedor Front-end com
-            experiência em React, TypeScript, Javascript,
-            StyledComponentes, Html, Css, Sass,
-            Bootstrap;
+            experiência em React, TypeScript,
+            Javascript, StyledComponentes,
+            Html, Css, Sass, Bootstrap;
           </p>
           <p>
             Atualmente trabalhando como
@@ -94,6 +95,6 @@ function Sobre() {
       </div>
     </SobreStyle>
   );
-}
+};
 
 export default Sobre;
