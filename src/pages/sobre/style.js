@@ -9,12 +9,6 @@ export const SobreStyle = styled.section`
     @media screen and (max-width:890px){
         height: 1300px;
     }
-    @media screen and (max-width:456px){
-        padding-top: 3rem;
-    }
-    @media screen and (max-width:380px){
-        padding-top:0;
-    }
     
     
     .sobretitle{

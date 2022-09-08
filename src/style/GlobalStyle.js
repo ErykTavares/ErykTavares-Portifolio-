@@ -34,7 +34,6 @@ export const GlobalStyle = createGlobalStyle`
         flex-direction: column;
         align-items:center;
         background-color: var(--black);
-        overflow-y:scroll;
     }
     a, a:hover{
         text-decoration:none;
@@ -46,9 +45,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     section{
-        width: 80%;
+        width: 100%;
         max-width: 1366px;
+        padding: 0 1rem;
         padding-top:100px;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     .img-fluid{

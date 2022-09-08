@@ -9,7 +9,6 @@ export const HomeStyle = styled.section`
         height: 1300px;
         flex-direction:column;
         justify-content:start;
-        margin-bottom:1.8rem;
 
     }
 `

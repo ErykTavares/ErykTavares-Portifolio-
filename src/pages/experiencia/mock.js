@@ -1,6 +1,6 @@
 export default [
   {
-    name: "Uuhuw Software House · Tempo integral",
+    name: "Uuhuw Software House",
     date: "Jun/2022",
     description: `Responsabilidades:
         Responsible for the development and maintenance of several Front-End React functionalities;
