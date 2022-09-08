@@ -8,6 +8,10 @@ export const ExperienciaStyle = styled.section`
   align-items: center;
   justify-content: start;
   padding-bottom: 0.5rem;
+
+  @media screen and (max-width: 389px) {
+    height: auto;
+  }
 `;
 
 export const SkillsSectionStyle = styled.div`
@@ -34,6 +38,9 @@ export const ExprienciaSectionStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
   overflow-y: scroll;
-  ::-webkit-scrollbar{width: 0px;}
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
 `;

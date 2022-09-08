@@ -19,7 +19,7 @@ export const ProjectStyle = styled.section`
 `
 
 export const ProjectGridStyle = styled.div`
-    width: 100%;
+    width: 80%;
     min-width: 300px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
