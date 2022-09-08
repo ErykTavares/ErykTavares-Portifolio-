@@ -5,7 +5,7 @@ export const ExperienciaStyle = styled.section`
     display:flex;
     flex-direction: column;
     align-items:center;
-    justify-content:space-around;
+    justify-content:start;
     @media screen and (max-width:920px){
         height: auto;
     }

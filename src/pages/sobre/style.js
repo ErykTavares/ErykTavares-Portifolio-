@@ -5,7 +5,7 @@ export const SobreStyle = styled.section`
     display: flex;
     flex-direction: column;
     align-items:center;
-    justify-content:center;
+    justify-content:start;
     @media screen and (max-width:890px){
         height: 1300px;
     }

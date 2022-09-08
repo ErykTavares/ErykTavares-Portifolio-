@@ -8,7 +8,7 @@ export const HomeStyle = styled.section`
     @media screen and (max-width:1300px) {
         height: 1300px;
         flex-direction:column;
-        justify-content:space-around;
+        justify-content:start;
         margin-bottom:1.8rem;
 
     }
@@ -99,7 +99,8 @@ export const HomeContentLeft = styled.div`
         justify-content:center;
         margin-top:15px;
         @media screen and (max-width:1300px){
-            width:100%
+            width:100%;
+            margin-bottom: 1rem;
         }
 
 `
