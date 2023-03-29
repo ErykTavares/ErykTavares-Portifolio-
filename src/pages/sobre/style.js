@@ -100,9 +100,10 @@ export const SobreContentRight = styled.div`
 
     p{
         align-self:start;
-        word-break:break-all;
         text-align:justify;
         font-size:1.1rem;
+        hyphens: auto;
+ 
         @media screen and (max-width:500px){
            font-size:1rem;
         }
