@@ -1,7 +1,7 @@
 export default [
   {
     name: "Uuhuw Software House",
-    date: "Jun/2022",
+    date: "Jun/2022 - Mar/2023",
     description: `Responsabilidades:
         Responsible for the development and maintenance of several Front-End React functionalities;
         Skills: React, Typescript, StyledComponents, Sass, Axios, SweetAlert2, ReactApexCharts, React GoogleMapsApi, Bootstrap.`,
