@@ -7,6 +7,6 @@ export const BadgeStyle = styled.div`
 	align-items: center;
 	justify-content: center;
 	padding: 0 0.5rem;
-	border-radius: 0.3rem;
+	border-radius: 0.5rem;
 	background-color: ${({ bgcolor }) => bgcolor};
 `;
