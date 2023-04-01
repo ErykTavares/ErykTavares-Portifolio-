@@ -24,6 +24,12 @@ export const ProjectCardStyle = styled.a`
 		.card-content {
 			opacity: 1;
 			transform: translateY(0%);
+			background: rgba(0, 0, 0, 0.36);
+			border-radius: 16px;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			backdrop-filter: blur(2px);
+			-webkit-backdrop-filter: blur(8px);
+			border: 1px solid rgba(0, 0, 0, 0.15);
 		}
 	}
 
@@ -37,6 +43,9 @@ export const ProjectCardStyle = styled.a`
 		text-align: justify;
 		padding: 0 0.35rem;
 		margin-bottom: 0.5rem;
+		hyphens: auto;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 
 	article {
@@ -54,13 +63,15 @@ export const ProjectCardStyle = styled.a`
 	}
 
 	.card-content {
+		width: 100%;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		opacity: 0;
-		transform: translateY(100%);
-		transition: 0.8s;
+		transform: translateY(150%);
+		transition: 1s;
 	}
 
 	.row-badge {
