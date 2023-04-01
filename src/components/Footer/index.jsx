@@ -1,14 +1,14 @@
-import React from "react";
-import { FooterStyle } from "./style";
+import React from 'react';
+import { FooterStyle } from './style';
 
 const Footer = () => {
-  const year = new Date().getFullYear();
+	const year = new Date().getFullYear();
 
-  return (
-    <FooterStyle>
-      <h6>copyright &copy; {year} - ErykTavares</h6>
-    </FooterStyle>
-  );
+	return (
+		<FooterStyle>
+			<h6>copyright &copy; {year} - ErykTavares</h6>
+		</FooterStyle>
+	);
 };
 
 export default Footer;
