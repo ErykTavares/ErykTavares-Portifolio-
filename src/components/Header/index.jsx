@@ -20,7 +20,7 @@ const Header = () => {
 				<NavLink to='/sobre'>Sobre</NavLink>
 			</li>
 			<li>
-				<NavLink to='/experiencia'>Expêriencia</NavLink>
+				<NavLink to='/experiencia'>Experiência</NavLink>
 			</li>
 			<li>
 				<NavLink to='/projetos'>Projetos</NavLink>

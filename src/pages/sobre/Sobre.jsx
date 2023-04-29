@@ -62,7 +62,7 @@ const Sobre = () => (
 				<p>Tenho interesse em ser um Desenvolvedor FullStack;</p>
 				<p>
 					Sou apaixonado pela área de tecnologia, venho mexendo em computadores desde 2011
-					que foi quando eu ganhei meu primeiro notebook, dês dessa época eu tenho
+					que foi quando eu ganhei meu primeiro notebook, desde essa época eu tenho
 					interesse na área de programação. Entusiasta em UI UX e edição de vídeo, curto
 					muito jogos, animes, mangás, leitura e esportes principalmente calistenia, eles
 					são minhas atividades nas horas que eu não estou trabalhando ou estudando.
