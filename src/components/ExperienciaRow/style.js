@@ -37,7 +37,7 @@ export const ExperienciaRowStyle = styled.div`
 	}
 `;
 export const RowCell = styled.div`
-	width: 300px;
+	width: 320px;
 	height: 150px;
 	display: flex;
 	flex-direction: column;
@@ -59,7 +59,10 @@ export const RowCell = styled.div`
 	}
 
 	p {
-		word-break: break-all;
+		align-self: start;
+		text-align: justify;
+		hyphens: auto;
+		white-space: none;
 		@media screen and (max-width: 450px) {
 			padding: 0 1.4rem;
 		}
