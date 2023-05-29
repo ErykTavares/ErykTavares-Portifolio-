@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const ExperienciaStyle = styled.section`
-	max-height: max-content;
-	height: calc(100vh - 60px + 950px);
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -40,12 +39,8 @@ export const SkillsSectionStyle = styled.div`
 `;
 export const ExprienciaSectionStyle = styled.div`
 	width: 100%;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	::-webkit-scrollbar {
-		width: 0px;
-	}
 `;

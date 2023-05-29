@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectStyle = styled.section`
-	height: calc(100vh - 60px + 620px);
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
