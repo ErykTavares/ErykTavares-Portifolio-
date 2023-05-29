@@ -1,5 +1,10 @@
 export default [
 	{
+		name: 'FRONT-END & Mobile / Freelancer',
+		date: 'Abr/2022',
+		description: `Contribuí para o projeto implementando várias funcionalidades, como personalização e ampliação de imagens no carrossel, adição de filtros para otimizar a busca na lista de itens e integração com API para obtenção de dados específicos. As melhorias foram aplicadas tanto na versão web quanto na mobile do projeto.`
+	},
+	{
 		name: 'Uuhuw Software House',
 		date: 'Jun/2022 - Mar/2023',
 		description: `Responsabilidades:Responsável pelo desenvolvimento e manutenção de diversas funcionalidades do Front-End React; Habilidades: React, Typescript, StyledComponents, Sass, Axios, SweetAlert2, ReactApexCharts, React GoogleMapsApi, Bootstrap.`
