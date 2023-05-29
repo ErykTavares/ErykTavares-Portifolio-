@@ -28,8 +28,13 @@ export const SkillsSectionStyle = styled.div`
 		cursor: pointer;
 		transform-style: preserve-3d;
 		transition: 0.8s;
+
 		&:hover {
 			transform: rotateY(180deg);
+		}
+
+		rect {
+			object-fit: cover;
 		}
 	}
 `;
