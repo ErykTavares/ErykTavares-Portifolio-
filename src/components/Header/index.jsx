@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import Line from '../Line';
 import { HeaderStyle } from './style';
@@ -7,7 +7,7 @@ import Button from '../Buttons/index';
 import MenuMobile from './MobileMenu/index';
 
 const Header = () => {
-	const [menumobile, setMenuMobile] = React.useState(false);
+	const [menumobile, setMenuMobile] = useState(false);
 
 	const location = useLocation();
 
@@ -28,11 +28,11 @@ const Header = () => {
 		</ul>
 	);
 
-	function handleClick() {
+	const handleClick = () => {
 		setMenuMobile(!menumobile);
-	}
+	};
 
-	React.useEffect(() => {
+	useEffect(() => {
 		setMenuMobile(false);
 	}, [location]);
 
