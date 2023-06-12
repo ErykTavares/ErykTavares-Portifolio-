@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MenuMobileStyle } from './styled';
 
 const Index = ({ children, active }) => {
-	const [state, setState] = React.useState('none');
+	const [state, setState] = useState('none');
 
-	React.useEffect(() => {
+	useEffect(() => {
 		if (active) {
 			setState('flex');
 		} else if (!active) {
-			setTimeout(() => setState('none'), 1000);
+			setTimeout(() => setState('none'), 500);
 		}
 	}, [active]);
 

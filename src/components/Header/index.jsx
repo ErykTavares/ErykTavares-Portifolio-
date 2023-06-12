@@ -7,7 +7,7 @@ import Button from '../Buttons/index';
 import MenuMobile from './MobileMenu/index';
 
 const Header = () => {
-	const [menumobile, setMenuMobile] = useState(false);
+	const [menuMobile, setMenuMobile] = useState(false);
 
 	const location = useLocation();
 
@@ -29,7 +29,7 @@ const Header = () => {
 	);
 
 	const handleClick = () => {
-		setMenuMobile(!menumobile);
+		setMenuMobile(!menuMobile);
 	};
 
 	useEffect(() => {
@@ -49,10 +49,10 @@ const Header = () => {
 					// eslint-disable-next-line
 					onClick={handleClick}
 				>
-					<Mobile className={menumobile ? 'btn-menu active' : 'btn-menu disabled'} />
+					<Mobile className={menuMobile ? 'btn-menu active' : 'btn-menu disabled'} />
 				</Button>
 				<nav className='desktopMenu'>{navlinks}</nav>
-				<MenuMobile className='menumobile' active={menumobile}>
+				<MenuMobile className='menumobile' active={menuMobile}>
 					{navlinks}
 				</MenuMobile>
 			</div>
