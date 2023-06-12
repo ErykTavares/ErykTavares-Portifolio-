@@ -3,10 +3,12 @@ import mock from './mock';
 import { ProjectStyle, ProjectGridStyle } from './style';
 import PageTitle from '../../components/PageTitle';
 import ProjectCard from '../../components/ProjectCard';
+import DefaultLayout from '../../layout/defaultLayout';
 
-const Projetos = () => {
-	const projectlist = mock;
-	return (
+const projectlist = mock;
+
+const Projetos = () => (
+	<DefaultLayout>
 		<ProjectStyle>
 			<PageTitle>Projetos</PageTitle>
 			<ProjectGridStyle>
@@ -22,7 +24,7 @@ const Projetos = () => {
 				))}
 			</ProjectGridStyle>
 		</ProjectStyle>
-	);
-};
+	</DefaultLayout>
+);
 
 export default Projetos;

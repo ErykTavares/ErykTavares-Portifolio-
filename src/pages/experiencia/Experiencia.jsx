@@ -15,33 +15,37 @@ import { ReactComponent as NextSvg } from '../../assets/svg/next-js-icon-seeklog
 import { ReactComponent as RectNativeSvg } from '../../assets/svg/react-native-1.svg';
 import { ReactComponent as ReduxSvg } from '../../assets/svg/redux-svgrepo-com.svg';
 import { ReactComponent as TailwindSvg } from '../../assets/svg/Tailwind_CSS_Logo 1.svg';
+import DefaultLayout from '../../layout/defaultLayout';
 
 const worklist = worklistmock;
-const Experiencia = () => (
-	<ExperienciaStyle>
-		<PageTitle>Skills</PageTitle>
-		<SkillsSectionStyle className='animepop'>
-			<Reactsvg />
-			<JavaScript />
-			<TypeScriptSVg />
-			<Html />
-			<Css />
-			<NextSvg />
-			<RectNativeSvg />
-			<ReduxSvg />
-			<StyledComponents />
-			<Python />
-			<Bootstrap />
-			<TailwindSvg />
-		</SkillsSectionStyle>
-		<ExprienciaSectionStyle>
-			<PageTitle>Experiência</PageTitle>
 
-			{worklist.map(({ name, date, description }, index) => (
-				<ExperienciaRow key={index} name={name} date={date} description={description} />
-			))}
-		</ExprienciaSectionStyle>
-	</ExperienciaStyle>
+const Experiencia = () => (
+	<DefaultLayout>
+		<ExperienciaStyle>
+			<PageTitle>Skills</PageTitle>
+			<SkillsSectionStyle className='animepop'>
+				<Reactsvg />
+				<JavaScript />
+				<TypeScriptSVg />
+				<Html />
+				<Css />
+				<NextSvg />
+				<RectNativeSvg />
+				<ReduxSvg />
+				<StyledComponents />
+				<Python />
+				<Bootstrap />
+				<TailwindSvg />
+			</SkillsSectionStyle>
+			<ExprienciaSectionStyle>
+				<PageTitle>Experiência</PageTitle>
+
+				{worklist.map(({ name, date, description }, index) => (
+					<ExperienciaRow key={index} name={name} date={date} description={description} />
+				))}
+			</ExprienciaSectionStyle>
+		</ExperienciaStyle>
+	</DefaultLayout>
 );
 
 export default Experiencia;
