@@ -57,19 +57,16 @@ const Sobre = () => (
 				<SobreContentRight className='animeright'>
 					<h3>Apresentação</h3>
 					<p>
-						Desenvolvedor Front-end com experiência em React, TypeScript, Javascript,
-						StyledComponentes, Html, Css, Sass, Bootstrap;
-					</p>
-					<p>Atualmente trabalhando como Desenvolvedor Front-End Freelancer;</p>
-					<p>Tenho interesse em ser um Desenvolvedor FullStack;</p>
-					<p>
-						Sou apaixonado pela área de tecnologia, venho mexendo em computadores desde
-						2011 que foi quando eu ganhei meu primeiro notebook, desde essa época eu
-						tenho interesse na área de programação. Entusiasta em UI UX e edição de
-						vídeo, curto muito jogos, animes, mangás, leitura e esportes principalmente
-						calistenia, eles são minhas atividades nas horas que eu não estou
-						trabalhando ou estudando. Atualmente estudando como autodidata, inglês,
-						Programação.
+						Desenvolvedor Front-end com experiência em React, TypeScript, JavaScript,
+						Styled Components, HTML, CSS, Sass e Bootstrap. Atualmente trabalhando como
+						Desenvolvedor Front-End Freelancer. Tenho interesse em me tornar um
+						Desenvolvedor FullStack. Sou apaixonado pela área de tecnologia; venho
+						mexendo em computadores desde 2011, quando ganhei meu primeiro notebook.
+						Desde essa época, tenho interesse na área de programação. Sou entusiasta em
+						UI/UX e edição de vídeo. Curto muito jogos, animes, mangás, leitura e
+						esportes, principalmente calistenia. Essas são minhas atividades nas horas
+						em que não estou trabalhando ou estudando. Atualmente, estou estudando como
+						autodidata inglês e programação.
 					</p>
 				</SobreContentRight>
 			</div>
