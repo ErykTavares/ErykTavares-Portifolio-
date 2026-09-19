@@ -1,25 +1,19 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { BadgeStyle } from './style';
-
-const bgcolorlist = {
-	javascript: '#EB9E00',
-	html: '#EB4804',
-	css: '#0A2FEB',
-	react: '#00C3F5',
-	styledComponentes: '#EB3FB3',
-	python: '#0081EB',
-	bootstrap: '#3302A6'
-};
+import { bgcolorlist } from './utils';
 
 const Badge = ({ lang }) => {
-	const [bgcolor, setBgColor] = React.useState('');
+	const [bgcolor, setBgColor] = useState('');
 
-	React.useEffect(() => {
-		Object.keys(bgcolorlist).filter((fill) => {
-			const lowercaselang = lang.toLowerCase();
-			return fill === lowercaselang ? setBgColor(bgcolorlist[fill]) : null;
-		});
+	const onLabelStyle = useCallback(() => {
+		const currentLangName = Object.keys(bgcolorlist).find((fin) => fin === lang.toLowerCase());
+
+		setBgColor(bgcolorlist[currentLangName]);
 	}, [lang]);
+
+	useEffect(() => {
+		onLabelStyle();
+	}, [onLabelStyle]);
 
 	return <BadgeStyle bgcolor={bgcolor}>{lang}</BadgeStyle>;
 };
