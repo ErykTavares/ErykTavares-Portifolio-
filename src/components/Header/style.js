@@ -62,6 +62,7 @@ export const HeaderStyle = styled.header`
 		&:hover rect {
 			fill: var(--red);
 		}
+
 		@media screen and (max-width: 760px) {
 			display: flex;
 		}

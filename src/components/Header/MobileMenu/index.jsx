@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { MenuMobileStyle } from './styled';
 
 const Index = ({ children, active }) => {
 	const [state, setState] = useState('none');
 
-	useEffect(() => {
+	const menuMobileClassName = active ? 'an-toBottom' : 'an-toTop';
+
+	const onToggleActive = useCallback(() => {
 		if (active) {
 			setState('flex');
 		} else if (!active) {
@@ -12,8 +14,12 @@ const Index = ({ children, active }) => {
 		}
 	}, [active]);
 
+	useEffect(() => {
+		onToggleActive();
+	}, [onToggleActive]);
+
 	return (
-		<MenuMobileStyle state={state} className={active ? 'an-toBottom' : 'an-toTop'}>
+		<MenuMobileStyle state={state} className={menuMobileClassName}>
 			{children}
 		</MenuMobileStyle>
 	);
