@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Angular">
+  <defs>
+    <linearGradient id="angularGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dd0031"/>
+      <stop offset="100%" stop-color="#c3002f"/>
+    </linearGradient>
+  </defs>
+  <polygon points="64,8 112,24 102,96 64,120 26,96 16,24" fill="url(#angularGrad)"/>
+  <polygon points="64,22 90,30 84,86 64,106 44,86 38,30" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <path d="M64 34 46 84h11l3-10h14l3 10h11L64 34Zm0 19 5 15H59l5-15Z" fill="#ffffff"/>
+</svg>

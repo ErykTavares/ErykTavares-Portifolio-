@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Flutter">
+  <rect width="128" height="128" rx="24" fill="#ffffff"/>
+  <path d="M29 63.5 64 28.5h26L42 76l24 24H40L29 88V63.5Z" fill="#02569B"/>
+  <path d="M42 76 64 54h26L68 76l22 22H64L42 76Z" fill="#54C5F8"/>
+  <path d="M57 91 75 73h18L66 100 57 91Z" fill="#02569B" opacity="0.9"/>
+</svg>
