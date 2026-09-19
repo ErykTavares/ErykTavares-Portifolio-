@@ -43,7 +43,7 @@ export const RowCell = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
-	text-align: justify;
+	text-align: left;
 
 	h3 {
 		font-size: 1.2rem;
@@ -60,9 +60,10 @@ export const RowCell = styled.div`
 
 	p {
 		align-self: start;
-		text-align: justify;
+		text-align: left;
 		hyphens: auto;
-		white-space: none;
+		white-space: normal;
+		line-height: 1.5;
 		@media screen and (max-width: 450px) {
 			padding: 0 1.4rem;
 		}
