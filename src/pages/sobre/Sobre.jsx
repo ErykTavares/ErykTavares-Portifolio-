@@ -1,77 +1,64 @@
 import React from 'react';
 import { SobreStyle, SobreContentRight, SobreContentLeft } from './style';
 import PageTitle from '../../components/PageTitle';
-import { ReactComponent as Instagramsvg } from '../../assets/svg/Instagram.svg';
-import { ReactComponent as Youtubesvg } from '../../assets/svg/youtube.svg';
-import { ReactComponent as Whatsappsvg } from '../../assets/svg/whatsapp.svg';
-import { ReactComponent as Discordsvg } from '../../assets/svg/discord-svgrepo-com.svg';
+
 import Image from '../../components/Image';
 import DefaultLayout from '../../layout/defaultLayout';
+import { socialLinks } from './utils';
 
-const Sobre = () => (
-	<DefaultLayout>
-		<SobreStyle>
-			<div className='sobretitle'>
-				<PageTitle>Sobre</PageTitle>
-			</div>
-			<div className='content'>
-				<SobreContentLeft className='animeleft'>
-					<div className='profile-img'>
-						<Image
-							src={`${process.env.PUBLIC_URL}./assets/img/profile-img.webp`}
-							alt='profile-img'
-						/>
-					</div>
-					<div className='socialmedia'>
-						<a
-							href='https://www.instagram.com/lord_eryktavares/?hl=pt-br'
-							target='_blank'
-							rel='noreferrer'
-						>
-							<Instagramsvg />
-						</a>
-						<a
-							href='https://www.youtube.com/channel/UCvLrUAMzmxB-H0iK8H7ReQg'
-							target='_blank'
-							rel='noreferrer'
-						>
-							<Youtubesvg />
-						</a>
-						<a
-							href='http://api.whatsapp.com/send?phone=557591952463'
-							target='_blank'
-							rel='noreferrer'
-						>
-							<Whatsappsvg />
-						</a>
-						<a
-							href='https://discord.com/users/859431514449379358'
-							target='_blank'
-							rel='noreferrer'
-						>
-							<Discordsvg />
-						</a>
-					</div>
-					<h4>erictavares35@gmail.com</h4>
-				</SobreContentLeft>
-				<SobreContentRight className='animeright'>
-					<h3>Apresentação</h3>
-					<p>
-						Desenvolvedor Front-end com experiência em React, TypeScript, JavaScript,
-						Styled Components, HTML, CSS, Sass e Bootstrap. Atualmente trabalhando como
-						Desenvolvedor Front-End Freelancer. Tenho interesse em me tornar um
-						Desenvolvedor FullStack. Sou apaixonado pela área de tecnologia; venho
-						mexendo em computadores desde 2011, quando ganhei meu primeiro notebook.
-						Desde essa época, tenho interesse na área de programação. Sou entusiasta em
-						UI/UX e edição de vídeo. Curto muito jogos, animes, mangás, leitura e
-						esportes, principalmente calistenia. Essas são minhas atividades nas horas
-						em que não estou trabalhando ou estudando. Atualmente, estou estudando como
-						autodidata inglês e programação.
-					</p>
-				</SobreContentRight>
-			</div>
-		</SobreStyle>
-	</DefaultLayout>
-);
+const Sobre = () => {
+	const linksList = socialLinks.map(({ key, href, Icon }) => (
+		<a key={key} href={href} target='_blank' rel='noreferrer'>
+			<Icon />
+		</a>
+	));
+
+	return (
+		<DefaultLayout>
+			<SobreStyle>
+				<div className='sobretitle'>
+					<PageTitle>Sobre</PageTitle>
+				</div>
+				<div className='content'>
+					<SobreContentLeft className='animeleft'>
+						<div className='profile-img'>
+							<Image
+								src={`${process.env.PUBLIC_URL}./assets/img/profile-img.webp`}
+								alt='profile-img'
+							/>
+						</div>
+						<div className='socialmedia'>{linksList}</div>
+						<h4>erictavares35@gmail.com</h4>
+					</SobreContentLeft>
+					<SobreContentRight className='animeright'>
+						<h3>Apresentação</h3>
+						<p>
+							Software Engineer com experiência em desenvolvimento Front-End e Mobile,
+							atuando principalmente com React, React Native, TypeScript, JavaScript e
+							Next.js. Experiência no desenvolvimento e evolução de aplicações web e
+							mobile, Design Systems, Microfrontends, refatoração de sistemas legados,
+							integração com APIs, gerenciamento de estado, otimização de performance
+							e desenvolvimento de componentes reutilizáveis.
+						</p>
+						<p>
+							Experiência com React Query, TanStack Query, Redux, Context API, Axios,
+							Tailwind CSS, Material UI, Expo e WebSocket. Atuação em projetos de
+							migração tecnológica, modernização de aplicações, arquitetura de
+							componentes, melhoria de código, testes automatizados, CI/CD e Code
+							Review.
+						</p>
+						<p>
+							Atualmente expandindo conhecimentos em desenvolvimento Full Stack com
+							Node.js, Express.js e NestJS, buscando atuar na construção de aplicações
+							web e mobile robustas, escaláveis e de fácil manutenção. Experiência no
+							uso de ferramentas de AI Coding, incluindo GitHub Copilot, Cursor,
+							Claude e OpenAI Codex.
+						</p>
+					</SobreContentRight>
+				</div>
+			</SobreStyle>
+		</DefaultLayout>
+	);
+};
 
 export default Sobre;
