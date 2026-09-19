@@ -20,7 +20,7 @@ const Home = () => (
 				</div>
 				<div className='rContentButtons'>
 					<a
-						href={`${process.env.PUBLIC_URL}./assets/download/EricCVprogramação.pdf`}
+						href={`${process.env.PUBLIC_URL}./assets/download/EricTavares-CV.pdf`}
 						download
 					>
 						<Button>
