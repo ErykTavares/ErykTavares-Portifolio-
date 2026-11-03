@@ -29,6 +29,7 @@ export const GlobalStyle = createGlobalStyle`
 
     main{
         width:100%;
+        height: 100dvh;
         display:flex;
         flex-direction: column;
         align-items:center;
