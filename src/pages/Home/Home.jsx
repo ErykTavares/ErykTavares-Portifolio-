@@ -16,7 +16,7 @@ const Home = () => (
 			<HomeContentRight className='animeright'>
 				<div className='rContentTitle'>
 					<h2>ErykTavares</h2>
-					<h4>Desenvolvedor Web Front-End</h4>
+					<h4>Front-End Engineer</h4>
 				</div>
 				<div className='rContentButtons'>
 					<a
