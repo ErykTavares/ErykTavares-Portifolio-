@@ -7,6 +7,18 @@ export const ExperienciaRowStyle = styled.div`
 	align-items: center;
 	justify-content: space-around;
 	margin: 3rem 0;
+	cursor: pointer;
+	transition: transform 0.25s ease, filter 0.25s ease;
+
+	&:hover {
+		transform: translateY(-4px);
+		filter: brightness(1.05);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--red);
+		outline-offset: 6px;
+	}
 	@media screen and (max-width: 920px) {
 		height: 300px;
 		flex-direction: column-reverse;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ExperienciaStyle, ExprienciaSectionStyle } from './style';
 import PageTitle from '../../components/PageTitle';
-import ExperienciaRow from '../../components/ExperienciaRow';
+import ExperienciaRow from './components/ExperienciaRow';
 import worklistmock from './mock';
 
 import DefaultLayout from '../../layout/defaultLayout';
