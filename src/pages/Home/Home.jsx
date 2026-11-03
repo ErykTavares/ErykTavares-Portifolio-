@@ -9,7 +9,10 @@ import { ReactComponent as GitHub } from '../../assets/svg/Github.svg';
 import DefaultLayout from '../../layout/defaultLayout';
 
 const Home = () => {
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
+	const currentLanguage = i18n.resolvedLanguage?.startsWith('en') ? 'en' : 'pt';
+	const cvFileName =
+		currentLanguage === 'en' ? 'EricTavares-CV-English.pdf' : 'EricTavares-CV.pdf';
 
 	return (
 		<DefaultLayout>
@@ -24,7 +27,7 @@ const Home = () => {
 					</div>
 					<div className='rContentButtons'>
 						<a
-							href={`${process.env.PUBLIC_URL}./assets/download/EricTavares-CV.pdf`}
+							href={`${process.env.PUBLIC_URL}/assets/download/${cvFileName}`}
 							download
 						>
 							<Button>
