@@ -1,4 +1,4 @@
-export default [
+const portugueseWorklist = [
 	{
 		name: 'CredAluga',
 		role: 'Software Engineer II',
@@ -64,3 +64,82 @@ Gerenciamento de estado global com Redux e Context API.
 Integração de APIs com Axios e React Query.`
 	}
 ];
+
+const englishWorklist = [
+	{
+		name: 'CredAluga',
+		role: 'Software Engineer II',
+		date: 'Jan/2023',
+		description:
+			'Design System and reusable component creation/evolution; screen refactoring/standardization and API communication; Wallet/CredPoupa product development; code reviews and optimizations.',
+		detailedDescription: `Stack: Next.js, React, TypeScript, API Routes, Services Pattern, Design System.
+Created and evolved the Front-End Design System, increasing component reuse by 45%.
+Developed and migrated components to a unified standard, reducing rework by 30%.
+Delivered new products (Wallet and CredPoupa), shipping MVPs in cycles 20% faster.
+Refactored the API layer with Services Pattern and Next.js API Routes, reducing integration failures by 25%.
+Continuous work on code reviews and architecture improvements, increasing code quality and delivery predictability.
+Daily use of AI coding tools (GitHub Copilot, Cursor, and Claude) to speed up prototyping, refactoring, and technical reviews.`
+	},
+	{
+		name: 'Grupo Via Máquinas II',
+		role: 'Software Engineer II',
+		date: 'Sep/2025 - Dec/2026',
+		description:
+			'Migrated React Native + Expo to TypeScript; implemented real-time chat (text/audio/image) with WebSocket; pagination/cache with TanStack Query; dependency updates, new API integration, and Play Store release.',
+		detailedDescription: `Stack: React Native, Expo, TypeScript, TanStack Query, WebSocket.
+Led the migration of a React Native + Expo codebase from JavaScript to TypeScript, reaching 90% typed coverage.
+Led implementation of real-time chat (text, audio, and image) with WebSocket, reducing perceived latency by 35%.
+Implemented pagination and caching with TanStack Query, reducing data consumption by 28%.
+Updated React Native and Expo to newer versions, decreasing build/release incidents by 40%.
+Built and deployed to Google Play Store, improving publication cycle time by 30%.
+Applied Copilot, Cursor, and Claude to support code migration, debugging, and PR review.`
+	},
+	{
+		name: 'Codgo.X',
+		role: 'Software Engineer II',
+		date: 'Dec/2023 - Sep/2025',
+		description:
+			'Migrated legacy ASPX system to React + Microfrontends; responsive development with React/TypeScript and Material UI; performance and state optimizations with React Query; adoption of tests, CI/CD, and Expo mobile app.',
+		detailedDescription: `Stack: React, TypeScript, Material UI, Microfrontends, React Query, CI/CD.
+Led migration of a legacy credit system (ASPX) to React + Microfrontends, reducing maintenance time by 32%.
+Built responsive pages with React, TypeScript, and Material UI, improving internal usability score by 20%.
+Optimized performance with React Hooks, reducing average loading time by 6%.
+Managed state with Context API and React Query, reducing redundant calls by 22%.
+Worked on automated tests and CI/CD pipelines, improving release stability.
+Regular use of AI tools (Copilot, Cursor, and Claude) to accelerate delivery and improve code quality.`
+	},
+	{
+		name: 'Tracken',
+		role: 'Software Engineer II',
+		date: 'Aug/2023 - Dec/2023',
+		description:
+			'Migrated Angular + Ionic apps to React Native; UX/UI improvements; push setup and store publishing; Mercado Livre/Shopee integration; label printing feature implementation.',
+		detailedDescription: `Stack: React Native, REST APIs, Push Notifications, Play Store/App Store publishing.
+Migrated Angular + Ionic applications to React Native with smoother UX and better responsiveness.
+Implemented UX/UI improvements in Tracken Seller and Tracken Operations apps.
+Configured Push Notifications and published to Google Play Store and Apple App Store.
+Integrated marketplace APIs (Mercado Livre and Shopee).
+Developed label printing functionality for logistics workflows.`
+	},
+	{
+		name: 'Uuhuw Software House',
+		role: 'Software Engineer',
+		date: 'Feb/2022 - Jun/2023',
+		description:
+			'Responsibilities: development and maintenance of multiple React front-end features. Skills: React, TypeScript, Styled Components, Sass, Axios, SweetAlert2, ReactApexCharts, React GoogleMapsApi, Bootstrap.',
+		detailedDescription: `Stack: React, TypeScript, React Native, Redux, Context API, React Query, Axios.
+Migrated an international PHP system to React + TypeScript.
+Developed mobile version with React Native, focusing on accessibility and usability.
+Contributed to technical leadership, best practices, and code optimization.
+Refactored with React Hooks (useCallback, useMemo, and memo) for performance gains.
+Managed global state with Redux and Context API.
+Integrated APIs with Axios and React Query.`
+	}
+];
+
+export const worklistByLang = {
+	pt: portugueseWorklist,
+	en: englishWorklist
+};
+
+export default portugueseWorklist;

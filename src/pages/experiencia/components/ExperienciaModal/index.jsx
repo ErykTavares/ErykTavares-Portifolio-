@@ -1,8 +1,11 @@
 import React, { useCallback, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Backdrop, HeaderContent, HeaderWrapper, ModalBox } from './style';
 import Button from '../../../../components/Buttons';
 
 const ExperienciaModal = ({ isOpen, onClose, name, role, date, description }) => {
+	const { t } = useTranslation();
+
 	const onPressEscape = useCallback(
 		(event) => {
 			if (event.key === 'Escape') {
@@ -37,7 +40,7 @@ const ExperienciaModal = ({ isOpen, onClose, name, role, date, description }) =>
 			onClick={onClose}
 			role='dialog'
 			aria-modal='true'
-			aria-label={`Detalhes da experiência em ${name}`}
+			aria-label={t('experience.modal.detailsAria', { name })}
 		>
 			<ModalBox onClick={(event) => event.stopPropagation()}>
 				<HeaderWrapper>
@@ -50,7 +53,7 @@ const ExperienciaModal = ({ isOpen, onClose, name, role, date, description }) =>
 						height={20}
 						type='button'
 						onClick={onClose}
-						aria-label='Fechar modal'
+						aria-label={t('experience.modal.closeAria')}
 					>
 						×
 					</Button>
