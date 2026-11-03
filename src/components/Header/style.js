@@ -54,6 +54,25 @@ export const HeaderStyle = styled.header`
 		}
 	}
 
+	.lang-switch {
+		width: 40px;
+		height: 40px;
+		margin-top: 0.5rem;
+		border: 2px solid var(--white);
+		border-radius: 10px;
+		background: transparent;
+		color: var(--white);
+		font-size: 1rem;
+		font-weight: 700;
+		cursor: pointer;
+		transition: 0.3s;
+
+		&:hover {
+			border-color: var(--red);
+			color: var(--red);
+		}
+	}
+
 	.btn-menu {
 		margin-top: 0.5rem;
 		display: none;
